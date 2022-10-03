@@ -1,0 +1,26 @@
+body{
+    max-width: 90%;
+    margin: 0 auto;
+}
+p{
+    font-family:'Times New Roman', Times, serif
+    word-spacing: 10px;
+    font-size: 20px;
+    color: #333;
+}
+a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 110%;
+    color: crimson;
+}
+a:visited{
+    color: lightslategray;
+}
+blockquote{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
