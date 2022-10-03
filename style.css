@@ -1,11 +1,66 @@
+@font-face {
+    font-family: 'Open-sans';
+    src: url(./ressources/font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* MY CODE */
+
 body{
     max-width: 90%;
     margin: 0 auto;
+    background: linear-gradient(45deg, #f7a8ff, #40c6ff);
+    background-image: url(./ressources/background-image.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Open-sans';
+    /* background-position: bottom right; */
+    /* background-size: cover; */
+}
+header h1{
+    color: brown;
+}
+header figure{
+    float: left;
+    margin: 0 50px 30px 0;
+}
+header img{
+    width: 300px;
+}
+p:nth-child(1){
+    font-weight: bold;
 }
 p{
-    font-family:'Times New Roman', Times, serif
-    word-spacing: 10px;
-    font-size: 20px;
+    font-family: 'Open-Sans';
+    letter-spacing: 2px;
+    /* font-size: 20px; */
     color: #333;
 }
 a{
@@ -22,5 +77,65 @@ a:visited{
 blockquote{
     width: 50%;
     margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
     font-size: 1.6rem;
+    /* background-color: #f3f3f3;
+    border-left: 3px dashed brown;
+    padding-left: 30px; */
+}
+blockquote p{
+    /* color: white; */
+}
+q{
+    font-style: italic;
+}
+.villagers, .farmer {
+    width: 50%;
+    font-size: 1.6rem;
+}
+.villagers{
+    display: block;
+    margin: 80px 0;
+    border-left: 3px dashed  brown;
+    padding-left: 30px;
+    background-color: #f3f3f3;
+}
+.farmer{
+    display: block;
+    margin: 80px 0;
+    border-left: 3px dashed gray;
+    padding-left: 30px;
+    background-color: #f3f3f3;
+}
+.good, .bad{
+    text-transform: uppercase;
+}
+.good{
+    color: green;
+}
+.bad{
+    color: brown;
+}
+table{
+    background-color: white;
+}
+tr:nth-child(2n){
+    background-color: #f3f3f3;
+}
+
+/* CSS CODE PEN */
+
+/* Always display the alert on the bottom right corner even if you scroll */
+
+.notification{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background:#FFFFDD;
+    padding:.5rem 1rem;
+    border:3px solid #DDDDCC;
+    width:250px;
+    font-weight:bold;
+    color: #333300;
 }
